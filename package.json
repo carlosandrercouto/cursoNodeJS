@@ -1,0 +1,22 @@
+{
+  "name": "cursonodejs",
+  "version": "1.0.0",
+  "description": "Curso pratico de NodeJS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosandrercouto/cursoNodeJS.git"
+  },
+  "author": "Carlos André Couto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosandrercouto/cursoNodeJS/issues"
+  },
+  "homepage": "https://github.com/carlosandrercouto/cursoNodeJS#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
