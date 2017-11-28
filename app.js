@@ -1,4 +1,6 @@
 var express =  require('express');
+var msg = require('./nod_teste');
+
 var app =  express();
 
 app.set('view engine', 'ejs');
@@ -16,5 +18,5 @@ app.get('/noticia', function(req, res){
 });
 
 app.listen(3000, function(){
-	console.log("Servidor rodando com express");
+	console.log(msg());
 });
