@@ -1,16 +1,10 @@
 var app = require('./config/server');
 
-app.get('/', function(req, res){
-		res.render("home/index");
-});
+var rotaNoticias = require('./app/routes/noticia')(app);
 
-app.get('/admin', function(req, res){
-	res.render("admin/form_add_noticia");
-});
+var rotaHome = require('./app/routes/home')(app);
 
-app.get('/noticia', function(req, res){
-	res.render("noticias/noticias");
-});
+var rotaAdmin = require('./app/routes/admin')(app);
 
 app.listen(3000, function(){
 	console.log("Servidor Rodando!!!");
